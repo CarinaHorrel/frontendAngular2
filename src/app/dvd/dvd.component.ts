@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dvd.component.html',
   styleUrls: ['./dvd.component.css']
 })
-export class DvdComponent implements OnInit {
+export class DVDComponent implements OnInit {
 
   constructor() { }
 

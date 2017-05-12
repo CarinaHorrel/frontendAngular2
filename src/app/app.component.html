@@ -10,28 +10,196 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li>
-              <a routerLink="about">About</a>
-            </li>
-            <li>
-               <a routerLink="movies">Movies</a>
-            </li>
-            <li>
-               <a routerLink="music">Music</a>
-            </li>
-            <li>
-               <a routerLink="books">Books</a>
-            </li>
-            <li>
-               <a routerLink="contact">Contact</a>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="about">About <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="about">
+                <!--<li><a href="../default/">Default</a></li>
+                <li class="divider"></li>-->
+                <li><a href="#">Who am I</a></li>
+                <li><a href="#">What I do</a></li>
+                <li><a href="#">Mission & Vision</a></li>
+                <li><a href="#">Resources</a></li>
+              </ul>
             </li>
 
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="movies">Movies <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="movies">
+                <!--<li><a href="../default/">Default</a></li>-->
+                <li class="divider"></li>
+                <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="databasemovies">Database movies <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="databasemovies">
+                             <!--<li><a href="../default/">Default</a></li>-->
+                             <!--<li class="divider"></li>-->
+                             <li><a href="http://www.imdb.com" target="_blank">IMDB</a></li>
+                             <li><a href="#" target="_blank">Add movie</a></li>
+                             <li><a href="#" target="_blank">Add actor</a></li>
+                             <li><a href="#" target="_blank">Add genre</a></li>
+                          </ul>
+                </li>              
+                <li>
+                 <a href="#">Show available movies in database</a>
+                </li>
+                <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="moviereviews">Movie reviews <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="moviereviews">
+                            <!--<li><a href="../default/">Default</a></li>-->
+                            <!--<li class="divider"></li>-->
+                            <li><a href="http://www.imdb.com" target="_blank">IMDB</a></li>
+                            <li><a href="http://www.empireonline.com" target="_blank">Empire</a></li>
+                            <li><a href="http://www.metacritic.com" target="_blank">Metacritic</a></li>
+                            <li><a href="http://www.rottentomatoes.com" target="_blank">Rotten Tomatoes</a></li>
+                            <li><a href="http://www.variety.com" target="_blank">Variety</a></li>
+                          </ul>
+                </li>
+
+                <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="otherlinksmovies">Other links <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="otherlinksmovies">
+                            <!--<li><a href="../default/">Default</a></li>-->
+                            <li class="divider"></li>
+                            <li><a href="http://www.sundance.org" target="_blank">Sundance Film Festival</a></li>
+                            <li><a href="http://www.tropfest.com" target="_blank">Tropfest</a></li>
+                            <li><a href="http://sxsw.com" target="_blank">South by Southwest</a></li>
+                            <li><a href="http://www.londonindependent.org" target="_blank">London Independent Film Festival</a></li>
+                            <li><a href="http://www.festival-cannes.com" target="_blank">Cannes International Film Festival</a></li>
+                            <li><a href="http://www.sff.org.au" target="_blank">Sydney Film Festival</a></li>
+                            <li><a href="http://www.miff.com.au" target="_blank">Melbourne International Film Festival</a></li>
+                            <li><a href="http://www.nzff.co.nz" target="_blank">New Zealand International Film Festival</a></li>
+                            <li><a href="http://www.labiennale.org/en/cinema" target="_blank">Venice Film Festival</a></li>
+                            <li><a href="http://www.bfi.org.uk/lff/" target="_blank">London Film Festival</a></li>
+                            <li><a href="http://www.idfa.nl/industry.aspx" target="_blank">International Documentary Film Festival Amsterdam (IDFA)</a></li>
+                            <li><a href="http://whistlerfilmfestival.com" target="_blank">Whistler Film Festival</a></li>
+                        </ul>
+                </li>
+              </ul>
+            </li>         
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="music">Music <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="music">
+                <!--<li><a href="../default/">Default</a></li>-->
+                <li class="divider"></li>
+                <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="databasemusic">Database music <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="databasemusic">
+                             <!--<li><a href="../default/">Default</a></li>-->
+                             <li class="divider"></li>
+                             <li><a href="#" target="_blank">Add music</a></li>
+                             <li><a href="#" target="_blank">Add artist</a></li>
+                             <li><a href="#" target="_blank">Add genre</a></li>
+                          </ul>
+                </li>              
+                <li>
+                 <a href="#">Show available music in database</a>
+                </li>
+                <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="musicreviews">Music reviews <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="musicreviews">
+                            <!--<li><a href="../default/">Default</a></li>-->
+                            <li class="divider"></li>
+                            <li><a href="http://www.imdb.com" target="_blank">IMDBxxx</a></li>
+                            <li><a href="http://www.empireonline.com" target="_blank">Empirexxx</a></li>
+                            <li><a href="http://www.metacritic.com" target="_blank">Metacriticxxx</a></li>
+                            <li><a href="http://www.rottentomatoes.com" target="_blank">Rotten Tomatoesxxx</a></li>
+                            <li><a href="http://www.variety.com" target="_blank">Varietyxxx</a></li>
+                          </ul>
+                </li>
+
+                <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="otherlinksmusic">Other links <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="otherlinksmusic">
+                            <!--<li><a href="../default/">Default</a></li>-->
+                            <li class="divider"></li>
+                            <li><a href="http://www.sundance.org" target="_blank">Sundance Film Festivalxxx</a></li>
+                            <li><a href="http://www.tropfest.com" target="_blank">Tropfesxxxt</a></li>
+                            <li><a href="http://sxsw.com" target="_blank">South by Southwestxxx</a></li>
+                            <li><a href="http://www.londonindependent.org" target="_blank">London Independent Film Festivalxxx</a></li>
+                            <li><a href="http://www.festival-cannes.com" target="_blank">Cannes International Film Festivalxx</a></li>
+                            <li><a href="http://www.sff.org.au" target="_blank">Sydney Film Festivalxxx</a></li>
+                            <li><a href="http://www.miff.com.au" target="_blank">Melbourne International Film Festivalxxx</a></li>
+                            <li><a href="http://www.nzff.co.nz" target="_blank">New Zealand International Film Festivalxxx</a></li>
+                            <li><a href="http://www.labiennale.org/en/cinema" target="_blank">Venice Film Festivalxxx</a></li>
+                            <li><a href="http://www.bfi.org.uk/lff/" target="_blank">London Film Festivalxxx</a></li>
+                            <li><a href="http://www.idfa.nl/industry.aspx" target="_blank">International Documentary Film Festival Amsterdam (IDFA)xxx</a></li>
+                            <li><a href="http://whistlerfilmfestival.com" target="_blank">Whistler Film Festivalxxx</a></li>
+                        </ul>
+                </li>
+              </ul>
+            </li>     
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="books">Books <span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelledby="books">
+                    <!--<li><a href="../default/">Default</a></li>-->
+                    <li class="divider"></li>
+                    <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="databasebooks">Database books <span class="caret"></span></a>
+                              <ul class="dropdown-menu" aria-labelledby="databasebooks">
+                                <!--<li><a href="../default/">Default</a></li>-->
+                                <li class="divider"></li>
+                                <li><a href="#" target="_blank">Add book</a></li>
+                                <li><a href="#" target="_blank">Add writer</a></li>
+                                <li><a href="#" target="_blank">Add genre</a></li>
+                              </ul>
+                    </li>              
+                    <li>
+                    <a href="#">Show available books in database</a>
+                    </li>
+                    <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="bookreviews">Book reviews <span class="caret"></span></a>
+                              <ul class="dropdown-menu" aria-labelledby="bookreviews">
+                                <!--<li><a href="../default/">Default</a></li>-->
+                                <li class="divider"></li>
+                                <li><a href="http://www.imdb.com" target="_blank">IMDBxxx</a></li>
+                                <li><a href="http://www.empireonline.com" target="_blank">Empirexxx</a></li>
+                                <li><a href="http://www.metacritic.com" target="_blank">Metacriticxxx</a></li>
+                                <li><a href="http://www.rottentomatoes.com" target="_blank">Rotten Tomatoesxxx</a></li>
+                                <li><a href="http://www.variety.com" target="_blank">Varietyxxx</a></li>
+                              </ul>
+                    </li>
+
+                    <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="otherlinksbooks">Other links <span class="caret"></span></a>
+                              <ul class="dropdown-menu" aria-labelledby="otherlinksbooks">
+                                <!--<li><a href="../default/">Default</a></li>-->
+                                <li class="divider"></li>
+                                <li><a href="http://www.sundance.org" target="_blank">Sundance Film Festivalxxx</a></li>
+                                <li><a href="http://www.tropfest.com" target="_blank">Tropfesxxxt</a></li>
+                                <li><a href="http://sxsw.com" target="_blank">South by Southwestxxx</a></li>
+                                <li><a href="http://www.londonindependent.org" target="_blank">London Independent Film Festivalxxx</a></li>
+                                <li><a href="http://www.festival-cannes.com" target="_blank">Cannes International Film Festivalxx</a></li>
+                                <li><a href="http://www.sff.org.au" target="_blank">Sydney Film Festivalxxx</a></li>
+                                <li><a href="http://www.miff.com.au" target="_blank">Melbourne International Film Festivalxxx</a></li>
+                                <li><a href="http://www.nzff.co.nz" target="_blank">New Zealand International Film Festivalxxx</a></li>
+                                <li><a href="http://www.labiennale.org/en/cinema" target="_blank">Venice Film Festivalxxx</a></li>
+                                <li><a href="http://www.bfi.org.uk/lff/" target="_blank">London Film Festivalxxx</a></li>
+                                <li><a href="http://www.idfa.nl/industry.aspx" target="_blank">International Documentary Film Festival Amsterdam (IDFA)xxx</a></li>
+                                <li><a href="http://whistlerfilmfestival.com" target="_blank">Whistler Film Festivalxxx</a></li>
+                            </ul>
+                    </li>
+                  </ul>
+                </li>    
+               <li><a href="../contact">Contact</a></li>
           </ul>
+
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+
+          
+
         </div>
       </div>
     </div>
 
-
     <div class="container">
       <router-outlet></router-outlet>
     </div>
+
+    
